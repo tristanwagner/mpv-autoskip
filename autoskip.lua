@@ -23,7 +23,7 @@ function skip(_, chapter)
 end
 
 function setSkip(value)
-  print("plugin setting skip to: ", value)
+  print("setting skip to:", value)
   if value == true then
     mp.observe_property('chapter', 'native', skip)
   else
